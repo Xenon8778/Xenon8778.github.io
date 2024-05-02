@@ -5206,7 +5206,6 @@ Created using IcoMoon - icomoon.io
 /* Experience Style */
 .cc-experience .cc-experience-header {
   padding-top: 50px;
-  padding-right: 0;
   text-align: center;
   font-size: 95%;
   color: #fff;}
@@ -5217,7 +5216,6 @@ Created using IcoMoon - icomoon.io
 
 .cc-education .cc-education-header {
   padding-top: 20px;
-  padding-right: 0;
   text-align: center;
   font-size: 95%;
   color: #fff; }
@@ -5225,7 +5223,6 @@ Created using IcoMoon - icomoon.io
 /* Publication Style */
 .cc-education .cc-publication-header {
   padding-top: 50px;
-  padding-right: 0;
   text-align: center;
   color: #fff; 
   font-size: 100%;}
