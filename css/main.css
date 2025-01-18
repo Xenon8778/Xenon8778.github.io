@@ -2246,6 +2246,7 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1em;
   font-weight: 700;
+  margin-top: 10px;
   text-transform: uppercase; }
 
 p {
@@ -5205,7 +5206,7 @@ Created using IcoMoon - icomoon.io
 
 /* Experience Style */
 .cc-experience .cc-experience-header {
-  padding-top: 50px;
+  padding-top: calc(20% + 0px);
   text-align: center;
   font-size: 95%;
   color: #fff;}
@@ -5224,8 +5225,11 @@ Created using IcoMoon - icomoon.io
 .cc-education .cc-publication-header {
   padding-top: 50px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: bottom;
   color: #fff; 
-  font-size: 100%;}
+  font-size: 95%;}
 
 /* References Style */
 .cc-reference .card {
