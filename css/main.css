@@ -5222,14 +5222,75 @@ Created using IcoMoon - icomoon.io
   color: #fff; }
  
 /* Publication Style */
-.cc-education .cc-publication-header {
-  padding-top: 50px;
-  text-align: center;
+.cc-education .cc-pub-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 24px; }
+
+.cc-education .cc-pub-item {
+  border: 1px solid #ececec;
+  border-radius: 6px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  transition: background 0.15s ease, border-color 0.15s ease; }
+  .cc-education .cc-pub-item:hover {
+    background: #f7f2f6;
+    border-color: #d8cad5; }
+  .cc-education .cc-pub-item.cc-pub-hidden {
+    display: none; }
+
+.cc-education .cc-pub-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.35; }
+
+.cc-education .cc-pub-meta {
   display: flex;
   align-items: center;
-  justify-content: bottom;
-  color: #fff; 
-  font-size: 95%;}
+  justify-content: space-between;
+  gap: 8px; }
+
+.cc-education .cc-pub-venue-wrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0; }
+
+.cc-education .cc-pub-venue {
+  font-size: 12px;
+  color: #777;
+  font-style: italic;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.cc-education .cc-pub-badges {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0; }
+  .cc-education .cc-pub-badges .altmetric-embed {
+    transform: scale(0.55);
+    transform-origin: left center;
+    margin-right: -12px; }
+  .cc-education .cc-pub-badges .__dimensions_badge_embed__ {
+    display: inline-block;
+    transform: scale(0.85);
+    transform-origin: left center; }
+
+.cc-education .cc-pub-link {
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap; }
+
+.cc-education .cc-pub-toggle-wrap {
+  margin-top: 20px; }
+
+@media (max-width: 767px) {
+  .cc-education .cc-pub-grid {
+    grid-template-columns: 1fr; } }
 
 /* References Style */
 .cc-reference .card {
