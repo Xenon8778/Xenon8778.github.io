@@ -41,3 +41,16 @@ $('a.smooth-scroll')
     }
   }
 });
+
+// Show more / fewer toggle for the Publications grid
+$('#pub-grid .cc-pub-item:gt(5)').addClass('cc-pub-hidden');
+$('#pub-toggle').click(function() {
+  var $hidden = $('#pub-grid .cc-pub-item.cc-pub-hidden');
+  if ($hidden.length) {
+    $hidden.removeClass('cc-pub-hidden');
+    $(this).text('Show fewer publications');
+  } else {
+    $('#pub-grid .cc-pub-item:gt(5)').addClass('cc-pub-hidden');
+    $(this).text('Show all 13 publications');
+  }
+});
