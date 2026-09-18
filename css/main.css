@@ -5251,7 +5251,8 @@ Created using IcoMoon - icomoon.io
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px; }
+  gap: 8px;
+  margin-top: auto;  }
 
 .cc-education .cc-pub-venue-wrap {
   display: flex;
@@ -5261,24 +5262,24 @@ Created using IcoMoon - icomoon.io
 
 .cc-education .cc-pub-venue {
   font-size: 12px;
+  margin-right: 10px;
   color: #777;
   font-style: italic;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap; }
+  white-space: nowrap;
+  align-items: center;
+  padding-right: 4px; }
 
 .cc-education .cc-pub-badges {
   display: inline-flex;
-  align-items: center;
+  align-items: start;
   flex-shrink: 0; }
-  .cc-education .cc-pub-badges .altmetric-embed {
-    transform: scale(0.55);
-    transform-origin: left center;
-    margin-right: -12px; }
   .cc-education .cc-pub-badges .__dimensions_badge_embed__ {
     display: inline-block;
-    transform: scale(0.85);
-    transform-origin: left center; }
+    transform: scale(0.8);
+    transform-origin: left center;
+    margin-right: -12px; }
 
 .cc-education .cc-pub-link {
   font-size: 12px;
