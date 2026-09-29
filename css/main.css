@@ -5212,15 +5212,57 @@ Created using IcoMoon - icomoon.io
   color: #fff;}
 
 /* Education Style */
-.cc-education .h5 {
-  margin-bottom: 0; }
+.cc-education .cc-edu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; }
 
-.cc-education .cc-education-header {
-  padding-top: 20px;
-  text-align: center;
-  font-size: 95%;
-  color: #fff; }
- 
+.cc-education .cc-edu-item {
+  border: 1px solid #ececec;
+  border-left: 4px solid #702963;
+  border-radius: 8px;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #ffffff;
+  transition: background 0.15s ease, border-color 0.15s ease; }
+  .cc-education .cc-edu-item:hover {
+    background: #f7f2f6; }
+
+.cc-education .cc-edu-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px; }
+
+.cc-education .cc-edu-level {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #702963;
+  background: #f4ecf2;
+  padding: 3px 10px;
+  border-radius: 12px; }
+
+.cc-education .cc-edu-dates {
+  font-size: 12px;
+  color: #8a8a8a; }
+
+.cc-education .cc-edu-degree {
+  font-size: 18px;
+  font-weight: 700;
+  color: #171717; }
+
+.cc-education .cc-edu-institution {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #8a8a8a; }
+
 /* Publication Style */
 .cc-education .cc-pub-grid {
   display: grid;
