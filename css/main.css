@@ -5205,11 +5205,61 @@ Created using IcoMoon - icomoon.io
     transform: scaleX(1); }
 
 /* Experience Style */
-.cc-experience .cc-experience-header {
-  padding-top: calc(20% + 0px);
-  text-align: center;
-  font-size: 95%;
-  color: #fff;}
+.cc-experience .cc-exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; }
+
+.cc-experience .cc-exp-item {
+  border: 1px solid #ececec;
+  border-left: 4px solid #702963;
+  border-radius: 8px;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #ffffff;
+  transition: background 0.15s ease, border-color 0.15s ease; }
+  .cc-experience .cc-exp-item:hover {
+    background: #f7f2f6; }
+
+.cc-experience .cc-exp-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px; }
+
+.cc-experience .cc-exp-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #171717; }
+
+.cc-experience .cc-exp-dates {
+  font-size: 12px;
+  color: #8a8a8a;
+  white-space: nowrap; }
+
+.cc-experience .cc-exp-org {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #8a8a8a; }
+
+.cc-experience .cc-exp-bullets {
+  margin: 4px 0 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px; }
+  .cc-experience .cc-exp-bullets li {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    padding-left: 2px; }
+    .cc-experience .cc-exp-bullets li::marker {
+      color: #702963; }
 
 /* Education Style */
 .cc-education .cc-edu-list {
